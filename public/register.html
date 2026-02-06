@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register | MarketMee</title>
+  </head>
+  <body>
+    <main>
+      <h1>Create an account</h1>
+      <form method="post" action="/register">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" required />
+        </label>
+        <label>
+          Role
+          <select name="role" required>
+            <option value="influencer">Influencer</option>
+            <option value="business">Business</option>
+            <option value="admin">Admin</option>
+          </select>
+        </label>
+        <button type="submit">Register</button>
+      </form>
+      <p>
+        Already registered? <a href="/login">Login</a>
+      </p>
+    </main>
+  </body>
+</html>
